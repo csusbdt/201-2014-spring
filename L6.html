@@ -11,16 +11,6 @@ layout: default
 <li>Learn how to write algorithms that perform sequential (linear) processing.</li>
 </ul>
 
-<h2>Assignment Folder</h2>
-
-<p>
-Create folder <em>~/201/lab_6</em> to contain the files
-you create for this lab.
-Follow the same file naming convention
-from earlier assignments.
-Remember to add, commit and push your source code files after completing each exercise.
-</p>
-
 <h2>Exercise 1: Finding the maximum value (5 points)</h2>
 
 <pre>
@@ -132,5 +122,60 @@ that uses a loop nested inside another loop
 to determine whether a 2-dimensional array contains only zeros.
 A declaration of the function is shown above.
 The array passed into the function will have 50 rows and 100 columns. 
+</p>
+
+<h2>Exercise 7: Identical Vectors (5 points)</h2>
+
+<pre>
+bool areIdentical(const vector&lt;int> &amp; a, const vector&lt;int> &amp; b);
+</pre>
+
+<p>
+Write a predicate function that checks whether two vectors are identical (contain exactly the
+same elements in the same order).  
+A declaration of the function is shown above.
+The function returns true if the two vectors are identical; otherwise it returns false.
+</p>
+
+<h2>Exercise 8: Unlucky Vectors (5 points)</h2>
+
+<pre>
+bool isUnlucky(vector&lt;int> &amp; v);
+</pre>
+
+<p>
+Implement a function that determines if the unlucky number 13 appears in a vector.  
+The function returns true if 13 appears in the vector at least once; otherwise it returns false.
+Write test code that tesets every statement in the function.
+Use assertions in your test code.
+</p>
+
+<h2>Exercise 9: Ordered Vectors (5 points)</h2>
+
+<pre>
+bool isStrictlyIncreasing(const vector&lt;int> &amp; v);
+</pre>
+
+<p>
+Write a predicate function called <em>isStrictlyIncreasing</em> that checks whether 
+a vector of integers contains values that are in strictly increasing order. 
+A declaration of the function is shown above. 
+The function returns true if the elements are in strictly increasing order; otherwise it
+returns false. 
+For example, it will return true for v = (­2, 4, 5, 6, 8) and it will return false for
+(3, 4, 6, 6, 9).
+</p>
+
+<h2>Exercise 10: Flatten (5 points)</h2>
+
+<pre>
+vector<int> flatten(int a[100][200]);
+</pre>
+
+<p>
+Write a function named flatten that takes a 2­dimensional array of integers
+with 100 rows and 200 columns and returns a vector that contains all of the array’s elements.
+Copy the values a row at a time. In other words, first copy row 0 into the vector, then row 1, then row 2, and so on.
+The declaration of flatten is given above.
 </p>
 

@@ -10,7 +10,7 @@
     ['L4',  40, new Date('2014-04-28T23:59:59'), '<a href="L4.html">L4: Functions</a>'],
     ['L5',  60, new Date('2014-05-05T23:59:59'), '<a href="L5.html">L5: Classes</a>'],
     ['Q2', 200, new Date('2014-05-07T23:59:59'), '<a href="Q2.html">Quiz 2</a>'],
-    ['L6',  30, new Date('2014-05-12T23:59:59'), '<a href="L6.html">L6: Arrays</a>'],
+    ['L6',  50, new Date('2014-05-12T23:59:59'), '<a href="L6.html">L6: Arrays</a>'],
     ['L7',  20, new Date('2014-05-16T23:59:59'), '<a href="L7.html">L7: Binary Search</a>'],
     ['A3',  50, new Date('2014-05-17T23:59:59'), '<a href="A3.pdf">A3: Algorithms 2</a>'],
     ['Q3', 200, new Date('2014-05-21T23:59:59'), '<a href="Q3.html">Quiz 3</a>'],
