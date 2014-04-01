@@ -16,17 +16,7 @@ layout: default
 <li>Learn how to solve programming problems with classes.</li>
 </ul>
 
-<h2>Assignment Folder</h2>
-
-<p>
-Create folder <em>~/201/lab_5</em> to contain the files
-you create for this lab.
-Follow the same file naming convention
-from earlier assignments.
-Remember to add, commit and push your source code files after completing each exercise.
-</p>
-
-<h2>Exercise 1: A number class (10 points)</h2>
+<h2>Exercise 1: A number class (20 points)</h2>
 
 <p>
 Develop a class called <code>Number</code> 
@@ -109,7 +99,7 @@ Your solution to this exercise should contain the following three files.
 Include a UML class diagram within a multi-line comment in <em>Number.h</em>.
 </p>
 
-<h2>Exercise 2: Listing prime numbers with the number class (10 points)</h2>
+<h2>Exercise 2: Listing prime numbers with the number class (20 points)</h2>
 
 <p>
 Write a program that prompts the user to enter a number larger than 2.
@@ -123,14 +113,47 @@ This is a problem you did in a previous lab.
 However, this time you will make use of your Number class in the solution.
 </p>
 
-<p>
-Place your code in a file named <em>ex2.cpp</em>.
-</p>
+<h2>Exercise 3: An Egg Carton Class (20 points)</h2>
 
 <p>
-There is no need to create copies of <em>Number.h</em>
-and <em>Number.cpp</em>; just include the <em>Number.h</em> header file
-in <em>ex2.cpp</em> and list <em>Number.cpp</em> on the command line
-along with <em>ex2.cpp</em> when you compile the program.
+Provide an implementation of the Egg Corton class described bellow.
+Develop test code that tests your implementation.
 </p>
+
+<pre>
++----------------------------------------------------------------+
+|                                                                |
+|                           EggCarton                            |
+|                                                                |
++----------------------------------------------------------------+
+|                                                                |
+| - brownEggs : int                                              |
+| - whiteEggs : int                                              |
+|                                                                |
++----------------------------------------------------------------+
+|                                                                |
+| + EggCarton(brownEggs : int, whiteEggs : int)                  |
+| + addBrownEggs(n : int) : bool                                 |
+| + addWhiteEggs(n : int) : bool                                 |
+| + getTotalEggs() : int                                         |
+|                                                                |
++----------------------------------------------------------------+
+</pre>
+
+<p class="figure">Figure 1</p>
+
+<p>
+The UML class diagram for the EggCarton class is shown in Figure 1.
+Instances of this class represent egg cartons that can hold up to 12 eggs. 
+The class provides functions to add white and brown eggs. 
+All of the functions that modify the number of eggs in the carton return false 
+if the operation can not be done exactly as requested. 
+For example, if there are 3 white eggs and 0 brown eggs, 
+then addBrownEggs(10) returns false and the number of white eggs 
+remains at 3 and brown eggs at 0. 
+There is a member function called getTotalEggs, 
+which returns the total number of white and brown eggs together. 
+For example, if the carton has 1 brown and 2 white eggs, then getTotalEggs returns 3.
+</p>
+
 

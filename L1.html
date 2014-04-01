@@ -24,16 +24,9 @@ You can also log into computers in JB 358 with the same username and password.
 </p>
 
 <p>
-You can optionally do all labs and assignments
-from home or other remote location
-by logging into a lab machine using SSH.
+You can also work on a lab computer from a remote computer.
 See <a href="ssh.html">How to work remotely using SSH</a>
 for instructions on how to do this.
-</p>
-
-<p>
-You can also work in an alternate environment
-as described in the next section.
 </p>
 
 <h2>Alternative Environments</h2>
@@ -47,8 +40,17 @@ However, you will need to install Xcode to have access to a C++ compiler.
 
 <p>
 If you have access to a computer that runs the Linux operating system,
-then you can use that computer and do not need to work on a computer in JB 359/358.
-You will need to install the GNU C++ compiler if not already installed.
+you will need to install the GNU C++ compiler if not already installed.
+Try the following command to find out.
+</p>
+
+<pre>
+c++ -v
+</pre>
+
+<p>
+If the above command is not found,
+then you need to install the GNU C++ compiler.
 How you do this depends on your system.
 If you have a GUI-based package manager,
 you can use that.
@@ -123,12 +125,7 @@ on practically all UNIX-like operating systems.
 For this reason, <em>vi</em> is an important tool for system administrators.
 </p>
 
-<p class="callout">
-If you want to work remotely but don't want to learn <em>vi</em>,
-then use <em>nano</em> from the command line.
-</p>
-
-<h2>Learn the Command Line Interface</h2>
+<h2>Learn the Command Line Interface (10 points)</h2>
 
 <p>
 Use a search engine to find documentation and tutorials 
@@ -166,103 +163,18 @@ Log into a computer in JB 359 or other UNIX-based system
 and practice using the above commands and special symbols.
 </p>
 
-<h2>Configure Your Environment to Use Git</h2>
-
 <p>
-The instructions in this section are for students working 
-on a computer in JB 359, either locally or remotely (via SSH).
-If you are working in a different environment, then see
-<a href="https://github.com/csusbdt/centos/blob/master/GIT-SUBMISSION.md">the
-general instructions for submitting work via Git</a>.
+One helpful feature of the terminal window
+is called <em>command completion</em>.
+If you press tab in the command line, the system will try to complete
+what you are typing by looking for a matching filename.
 </p>
 
 <p>
-Look in your home folder for a hidden folder named <em>.ssh</em>.
-</p>
-
-<pre>
-ls -a ~
-</pre>
-
-<p class="callout">
-In UNIX-based operating systems,
-files and folders that start with a dot are considered <em>hidden</em>.
-To force these objects to be displayed with the <code>ls</code> command,
-use the <code>-a</code> option.
-</p>
-
-<p>
-If you do not find a .ssh folder, then run the following command
-to generate a public-private key pair, which will also create the
-.ssh folder to contain them.
-<em>IMPORTANT: Do NOT enter a passphrase when the following command runs;
-just press enter when asked for one (which it does several times).
-Also, accept the default file name and location by simply pressing enter</em>.
-Replace "Your name" with your name.
-</p>
-
-<pre>
-ssh-keygen -t rsa -C "Your name"
-</pre>
-
-<p>
-After running this command, verify that the <em>.ssh</em> folder was created and
-contains your private and public keys.
-Use the <code>ls</code> command as follows to do this.
-</p>
-
-<pre>
-ls ~/.ssh/id_rsa.pub
-</pre>
-
-<p>
-Your private key is stored in the following location.
-</p>
-
-<pre>
-~/.ssh/id_rsa
-</pre>
-
-<p>
-You can distribute your public key, but keep your private key secret.
-Other systems will use your public key to create a
-cryptographic challenge that only the holder of the private key can solve.
-This is called asymmetric key encryption and is the foundation for
-secure communication on the Internet.
-</p>
-
-<p>
-Run the following command to load your keys into the SSH agent.
-</p>
-
-<pre>
-ssh-add
-</pre>
-
-<p>
-With the above configuration steps complete,
-you should be able to use the <code>git</code>
-program that is already installed on the computers in JB 359 (and 358).
-</p>
-
-<p>
-I will set up a remote Git repository
-for you to submit the source code you create for this course.
-To do this, I need a copy of your ssh public key.
-Use the following command to 
-display a character representation of your public key.
-</p>
-
-<pre>
-cat ~/.ssh/id_rsa.pub
-</pre>
-
-<p>
-Copy the contents of id_rsa.pub displayed on your screen
-and paste into an email that you send to me at <em>dturner@csusb.edu</em>.
-After I get your public key, I will create a repository for you
-and reply to your email with a command that you should
-use to clone your remote Git repository.
+Another helpful feature is called <em>command history</em>.
+This feature allows you to access a record of commands that you previously entered.
+Use the up and down arrow keys to scroll through the command history.
+Press enter at any previously entered command to run it again.
 </p>
 
 <h2>Experience Working with Assembly Language (10 points)</h2>
@@ -334,80 +246,7 @@ file that runs as expected.
 <h2>Submit Your Work</h2>
 
 <p>
-Check your email for a git clone command that I will send to you.
-When you get this email, run the command in your home directory
-to clone this remote repository into you home directory.
-</p>
-
-<p>
-The command I give you will create a folder named <em>201</em>
-in your home directory.
-This folder will contain a file name <em>README.md</em>.
-Make sure you read this file and follow the instructions in it.
-</p>
-
-<p>
-Create folder <em>~/201/lab_1</em>.
-</p>
-
-<pre>
-mkdir ~/201/lab_1
-</pre>
-
-<p>
-Copy your source code files into <em>~/201/lab_1</em>.
-</p>
-
-<pre>
-cp hello.s ~/201/lab_1/
-cp hello.cpp ~/201/lab_1/
-</pre>
-
-<p>
-Add and commit these files into your local repository.
-</p>
-
-<pre>
-cd ~/201/lab_1
-git add hello.s
-git add hello.cpp
-git commit -m "lab 1"
-</pre>
-
-<p>
-Push changes in your local repository to your remote repository.
-</p>
-
-<pre>
-git push
-</pre>
-
-<!--
-<p>
-After pushing chnages to from your local repository to your remote repository,
-send an email notification to
-Gerren Willis at <em>willisg@coyote.csusb.edu</em>
-and cc David Turner at <em>dturner@csusb.edu</em>.
-Make sure you include your name and the name of the assignment (Lab 1) in the email message.
-Do not attach any files to your email;
-we will access your work from the remote Git repository.
-</p>
--->
-
-<h2>Optional Study</h2>
-
-<p>
-To learn more about Git, I recommend completing the 
-<a href="http://try.github.io/levels/1/challenges/1">TryGit Tutorial</a> at CodeSchool.
-After this, familiarize yourself with
-<a href="http://git-scm.com/doc">the documentation for Git</a>.
-</p>
-
-<p>
-Although similar in some ways,
-the command line interface to Windows is different from UNIX systems.
-To become more familiar with it, 
-<a href="http://www.computerhope.com/msdos.htm">Microsoft 
-DOS and Windows command line</a> is a good resource.
+When you have completed this lab,
+talk to the teaching assistant to have your work evaluated.
 </p>
 

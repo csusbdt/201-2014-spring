@@ -19,17 +19,6 @@ layout: default
 <li>Understand how to use a debugger to find logic errors.</li>
 </ul>
 
-<h2>Assignment Folder</h2>
-
-<p>
-Create folder <em>~/201/lab_4</em> to contain the files
-you create for this lab.
-Follow the same file naming convention
-from earlier assignments.
-Remember to add, commit and push your source code files
-after completing each exercise.
-</p>
-
 <h2>Exercise 1: Detecting prime numbers with functions (10 points)</h2>
 
 <p>
@@ -80,4 +69,42 @@ In the previous lab, you wrote a console application that computes and displays 
 Re-organize the code in your solution to Listing random colors problem of the previous lab so that generation of a random color string is performed in a function.  Use functions to remove any nested loops (loops within loops) that are in your code.
 </p>
 
+<h2>Exercise 4: Generate a web page (10 points)</h2>
+
+<p>
+Write a program that generates a web page that contains a list of 100 random RGB color values.
+The program should write something like the following into cout.
+</p>
+
+<pre>
+&lt;html>
+  &lt;head>
+    &lt;title>Assignment 1 Exercise 2&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;ol>
+        &lt;li style="color: #324AF3">324AF3&lt;/li>
+        &lt;li style="color: #6A3125">6A3125&lt;/li>
+
+         ... 98 additional list items here ...
+
+    &lt;/ol>
+  &lt;/body>
+&lt;/html>
+</pre>
+
+<p>
+Organize your code using functions.
+</p>
+
+<p>
+The following shows how to save the output of your program
+to a file named colors.html.
+After doing this, open the file in a web browser
+to see the result.
+</p>
+
+<pre>
+./a.out > colors.html
+</pre>
 

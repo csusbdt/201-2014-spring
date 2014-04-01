@@ -24,41 +24,7 @@ layout: default
 <li>Learn to round floating point values to the nearest integer by adding <code>0.5</code>.</li>
 </ul>
 
-<h2>Instructions</h2>
-
-<p>
-Create folder <em>~/201/lab_2</em> to contain 
-the files that comprise
-your solutions the problems in this lab.
-</p>
-
-<pre>
-cd ~/201
-mkdir lab_2
-cd lab_2
-pwd
-</pre>
-
-<p>
-Each time you complete work on a source code file that
-solve a problem in this lab,
-add and commit it to your local repository
-and then push this change to your remote repository.
-</p>
-
-<p>
-Do not add <em>a.out</em>, back up files created by your editor, 
-or other derived files to the repository
-unless specifically asked for by the assignment.
-Just add the source code files that you create,
-which will all have a <em>.cpp</em> extension for this lab.
-</p>
-
-<p>
-Make sure that you add, commit and push your files before the deadline.
-</p>
-
-<h3>Exercise 1:  Practice with mathematical expressions (10 points)</h3>
+<h2>Exercise 1: Practice with mathematical expressions (10 points)</h2>
 
 <p>
 Write a console program that prompts the user 
@@ -79,85 +45,17 @@ Have the program compute and display the following values.
 <p>
 To access the built-in functions <code>sin</code>, <code>cos</code> and <code>log2</code>,
 you need to include the cmath header at the top of your code.
-The following shows one way to do this for the program you write.
 </p>
 
 <pre>
-#include &lt;iostream>
 #include &lt;cmath>
-
-using namespace std;
-
-int main( ...
 </pre>
 
-<p>
-Place your code in file <em>~/201/lab_2/ex1.cpp</em>.
-</p>
+<h2>Exercise 2:  Practice with mathematical expressions (50 points)</h2>
 
 <p>
-After you complete writing, debugging and testing your code,
-add and commit <em>ex1.cpp</em> to your local repository,
-and then push this change to your remote repository.
-The following commands accomplish this.
+Complete <a href="Lab2Exercise2.pdf">Exercise 2</a>.
 </p>
-
-<pre>
-cd ~/201/lab_2
-git add ex1.cpp
-git commit -m "lab 2 ex 1"
-git push
-</pre>
-
-<h2>Exercise 2: Unit conversion (10 points)</h2>
-
-<p>
-Write a console program that converts meters into feet and inches.
-The program starts by asking the user for a measurement in meters.
-The program should accept a floating point number.
-After getting the number, the program computes the number of feet and inches
-equal to the specified number of meters.
-The program outputs feet and inches as whole numbers.
-The program should round the number of inches correctly.
-Test that your program produces the following outputs for the given inputs.
-</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Input</th>
-      <th>Output</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0.3049</td>
-      <td>1 ft 0 in</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>3 ft 3 in</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>6 ft 7 in</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>
-Place your code in <em>~/201/lab_2/ex2.cpp</em>.
-</p>
-
-<p>
-Add, commit and push.
-</p>
-
-<pre>
-git add ex2.cpp
-git commit -m "lab 2 ex 2"
-git push
-</pre>
 
 <h2>Exercise 3: Random numbers (10 points)</h2>
 
@@ -223,15 +121,40 @@ To do this, run the program as follows.
 Open <em>numbers.txt</em> in a text editor to see the result.
 </p>
 
+<h2>Exercise 4: Unit conversion (10 points)</h2>
+
 <p>
-Submit the file <em>numbers.txt</em> 
-along with your source code in a file named <em>ex3.cpp</em>. 
+Write a console program that converts meters into feet and inches.
+The program starts by asking the user for a measurement in meters.
+The program should accept a floating point number.
+After getting the number, the program computes the number of feet and inches
+equal to the specified number of meters.
+The program outputs feet and inches as whole numbers.
+The program should round the number of inches correctly.
+Test that your program produces the following outputs for the given inputs.
 </p>
 
-<pre>
-git add ex3.cpp
-git add numbers.txt
-git commit -m "lab 2 ex 3"
-git push
-</pre>
+<table>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.3049</td>
+      <td>1 ft 0 in</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3 ft 3 in</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6 ft 7 in</td>
+    </tr>
+  </tbody>
+</table>
+
 
