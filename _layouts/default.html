@@ -24,33 +24,23 @@
 
     <header>
       <ul>
+        <li>CSE 201</li>
 {% if page.id == "index" %}
-        <li><a href="./" class="selected">CSE 201</a></li>
+        <li><a href="./" class="selected">schedule</a></li>
         <li><a href="syllabus.html">syllabus</a></li>
         <li><a href="contact.html">contact</a></li>
-        <li><a href="videos.html">videos</a></li>
-{% elsif page.id == "id" %}
-        <li><a href="./" class="selected">CSE 201</a></li>
 {% elsif page.id == "syllabus" %}
-        <li><a href="./">CSE 201</a></li>
+        <li><a href="./">schedule</a></li>
         <li><a href="syllabus.html" class="selected">syllabus</a></li>
         <li><a href="contact.html">contact</a></li>
-        <li><a href="videos.html">videos</a></li>
 {% elsif page.id == "contact" %}
-        <li><a href="./">CSE 201</a></li>
+        <li><a href="./">schedule</a></li>
         <li><a href="syllabus.html">syllabus</a></li>
         <li><a href="contact.html" class="selected">contact</a></li>
-        <li><a href="videos.html">videos</a></li>
-{% elsif page.id == "notes" %}
-        <li><a href="./">CSE 201</a></li>
-        <li><a href="syllabus.html">syllabus</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="videos.html" class="selected">videos</a></li>
 {% else %}
-        <li><a href="./" class="selected">CSE 201</a></li>
+        <li><a href="./">schedule</a></li>
         <li><a href="syllabus.html">syllabus</a></li>
         <li><a href="contact.html">contact</a></li>
-        <li><a href="videos.html">videos</a></li>
 {% endif %}
       </ul>
     </header>

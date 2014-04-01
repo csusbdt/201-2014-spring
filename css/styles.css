@@ -45,15 +45,12 @@ header a:active {
   text-decoration: none;
 }
 
-header ul li:first-child a:link,
-header ul li:first-child a:hover,
-header ul li:first-child a:visited,
-header ul li:first-child a:active {
-  font-size: 1.20em;
-}
-
 header a:visited.selected {
   color: #fff;
+}
+
+header ul li:first-child {
+  font-size: 1.2em;
 }
 
 @media (min-width: 768px) { .container { margin: 0 auto; width: 649px; } }
