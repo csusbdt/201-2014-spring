@@ -12,17 +12,7 @@ layout: default
 <li>Learn about time complexity.</li>
 </ul>
 
-<h2>Assignment Folder</h2>
-
-<p>
-Create folder <em>~/201/lab_8</em> to contain the files
-you create for this lab.
-Follow the same file naming convention
-from earlier assignments.
-Remember to add, commit and push your source code files after completing each exercise.
-</p>
-
-<h2>Exercise 1: Sorting (10 points)</h2>
+<h2>Exercise 1: Sorting (20 points)</h2>
 
 <pre>
 void mysort(vector&lt;int> &amp; v);
@@ -49,7 +39,7 @@ Write code that thoroughly tests your function.
 Express your tests using assertions.
 </p>
 
-<h2>Exercise 2: Running time of sort (10 points)</h2>
+<h2>Exercise 2: Running time of sort (20 points)</h2>
 
 <p>
 There are a wide variety of sorting algorithms that have been discovered.
@@ -166,7 +156,7 @@ runs in quadratic time.
 </p>
 
 <p>
-Create file <em>ex2.cpp</em> that includes your sort function <code>mysort</code>
+Create file that includes your sort function <code>mysort</code>
 and a main function that creates vectors of various sizes and passes them into
 <code>mysort</code>.
 Add code to <code>mysort</code> to count the number of times
@@ -207,15 +197,15 @@ Here is a <a href="http://www.mathcracker.com/scatter_plot.php">scatter plot gen
 that you can use to generate a scatter plot in your browser window.
 </p>
 
-<h2>Exercise 3: Comparison (10 points)</h2>
+<h2>Exercise 3: Comparison (20 points)</h2>
 
 <p>
-For this exercise, create 2 programs defined in files <em>ex3slow.cpp</em>
-and <em>ex3fast.cpp</em>.
+For this exercise, create 2 programs defined in files <em>slow.cpp</em>
+and <em>fast.cpp</em>.
 </p>
 
 <p>
-In <em>ex3slow.cpp</em>,
+In <em>slow.cpp</em>,
 generate a random vector of size 100,000
 and pass it to your sorting algorithm.
 Run the program and observe that it never ends.
@@ -223,7 +213,7 @@ Press <em>CTRL C</em> to terminate the process.
 </p>
 
 <p>
-In the <em>ex3fast.cpp</em>,
+In the <em>fast.cpp</em>,
 generate a random vector of size 100,000
 and pass it to the sort routine that is part of the C++ standard library.
 The following code shows how you would call the sort function on a vector <code>v</code>.
@@ -243,6 +233,6 @@ you may need to include the <em>algorithm</em> header as follows.
 </pre>
 
 <p>
-Run <em>ex3fast.cpp</em> and notice how quickly it terminates.
+Run <em>fast.cpp</em> and notice how quickly it terminates.
 </p>
 

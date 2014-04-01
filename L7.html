@@ -11,16 +11,6 @@ layout: default
 <li>Understand the running time of binary search as a function of the vector size.</li>
 </ul>
 
-<h2>Assignment Folder</h2>
-
-<p>
-Create folder <em>~/201/lab_7</em> to contain the files
-you create for this lab.
-Follow the same file naming convention
-from earlier assignments.
-Remember to add, commit and push your source code files after completing each exercise.
-</p>
-
 <h2>Exercise 1: Binary search (10 points)</h2>
 
 <pre>
@@ -58,33 +48,71 @@ Write test code that thoroughly tests your function.
 Express your tests using assertions.
 </p>
 
-<h2>Exercise 2: Running time of binary search (10 points)</h2>
+<h2>Exercise 2: Finding the Maximum Value in a 2D Array (10 points)</h2>
+
+<pre>
+const int ROWS = 4;
+const int COLS = 3;
+
+double findMax(duble a[ROWS][COLS]);
+</pre>
 
 <p>
-Binary search is much more efficient that linear search.
-Imagine looking up a word in a dictionary by starting at page 1,
-then looking at page 2, then page 3 and so on. 
-For most words, the process takes significantly longer than a binary search. 
+Implement a function called <em>findMax</em> that determines the maximum
+value in a 2-dimensional array.
+The declaration of the function is given above
+as well as the variables ROWS and COLS.
+Provide test code that defines an array of size ROWS by COLS
+and that uses an assert statement to check that the function
+returns the correct value.
 </p>
 
-<p>
-If there are <em>n</em> items in the vector, 
-then in the worst case linear search will complete after <em>n</em> comparisons 
-with the value you are searching for.
-In contrast, binary search will complete after 
-<em>log<sub>2</sub>n + 1</em> comparisons in the worst case, 
-where <em>log<sub>2</sub>n</em> is the base 2 logarithm of <em>n</em>.
-</p>
+<h2>Exercise 3: Linear Search (10 points)</h2>
+
+<pre>
+int search(int a[], int size, int k);
+</pre>
 
 <p>
-Add code to your implementation of the <code>contains</code> function 
-that checks that the search completes within 
-<em>log<sub>2</sub>n + 1</em> iterations of its processing loop.
-Use the <code>assert</code> function to express this check as a requirement.
+Implement a function that searches for a given value <em>k</em> in an array of integers.
+Do not assume the values are in order.
+If the value is found, the function returns the index of the value in the array;
+otherwise it returns -1.
+For example, for v = (-2, 4, 18, 6, -10) and k = 1,
+the function returns -1. and for k = 4 it returns 1.
+A declaration of the function is given above.
+Include test code with assertions.
 </p>
 
+
+<h2>Exercise 4: More Binary Search (10 points)</h2>
+
+<pre>
+int binarySearch(int a[], int size, int k);
+</pre>
+
 <p>
-Note: The mathematical function <em>log<sub>2</sub></em> 
-is available as <code>log2</code> if you include the header file &lt;cmath>.
+Implement a function that uses binary search to find the index position of a given
+value <em>k</em> in an array of integers whose eements are in strictly increasing order.
+searches for a given value <em>k</em> in an array of integers.
+If the value is found, the function returns the index of the value in the array;
+otherwise it returns -1.
+For example, for v = (-2, 4, 5, 6, 8) and k = 1,
+the function returns -1. and for k = 4 it returns 1.
+A declaration of the function is given above.
+Include test code with assertions.
 </p>
+
+<h2>Exercise 5: Guess the Number Game (10 points)</h2>
+
+<p>
+Write a program that implements Guess-the-Number game.  
+The program should enter a loop that starts by printing “What is the number?”  
+After printing this, it reads the user response. 
+(Use cin >> n to read the user response.)  
+If the user enters a value less than 1023, the program prints "too small" and continues the loop.  
+If the user enters a number larger than 1023, the program prints "too big" and continues the loop. 
+If the user enters the number 1023, the program prints "you got it" and then terminates.
+</p>
+
 
