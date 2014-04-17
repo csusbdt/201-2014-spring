@@ -11,6 +11,10 @@ in OS X and Linux, an ssh command line client is pre-installed.
 In Windows, you launch Putty; in OSX and Linux, you need to open a console window
 and run the program with the command _ssh_.
 
+If you are on Windows, I recommend that you 
+download and install _A Windows installer for everything except PuTTYtel_
+from [the downloads page of the official Website of Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+
 Because of the firewall around the lab machines,
 you can not directly connect to a lab machine.
 To get to a lab machine, you need to connect to an intermediate computer
