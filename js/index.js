@@ -11,10 +11,9 @@
     ['L5',  60, new Date('2014-05-05T23:59:59'), '<a href="L5.html">L5: Classes</a>'],
     ['Q2', 200, new Date('2014-05-07T23:59:59'), '<a href="E2.html">E2: Exam 2</a>'],
     ['L6',  50, new Date('2014-05-12T23:59:59'), '<a href="L6.html">L6: Arrays</a>'],
-    ['L7',  50, new Date('2014-05-19T23:59:59'), '<a href="L7.html">L7: Binary Search</a>'],
-    ['Q3', 200, new Date('2014-05-21T23:59:59'), '<a href="E3.html">E3: Exam 3</a>'],
-    ['L8',  60, new Date('2014-06-02T23:59:59'), '<a href="L8.html">L8: Sorting</a>'],
-    ['L9',  30, new Date('2014-06-09T23:59:59'), '<a href="L9.html">L9: Application</a>'],
+    ['L7',  50, new Date('2014-05-21T23:59:59'), '<a href="L7.html">L7: Binary Search</a>'],
+    ['Q3', 200, new Date('2014-06-02T23:59:59'), '<a href="E3.html">E3: Exam 3</a>'],
+    ['L8',  30, new Date('2014-06-04T23:59:59'), '<a href="L8.html">L8: Application</a>'],
     ['F' , 400, new Date('2014-06-11T12:00:00'), 'Final Exam' ]
   ];
 
